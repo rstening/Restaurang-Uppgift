@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <figure>
+        <img src="#" alt=" picture of food" class="banner">
+        </figure>
+        <nav class="main-nav">
+            
+                <a href="Hem.html">Hem</a>
+                <a href="meny.html">Meny</a>
+                <a href="boka.html">Boka bord</a>     
+        </nav>
+    </header>
+
+    <main class="content">
+        <section>
+    
+            <form id="form" enctype="multipart/form-data" action="">
+            <fieldset>
+                <legend>Bokningsuppgifter</legend>
+                    
+                    <label for="fullname">Namn</label>
+                    <input type="text" name="fullname" required placeholder="Skriv ditt namn">
+                
+                
+                    <label for="date">Datum</label>
+                    <input type="date" name="date">
+                    
+                    <label for="guests">Antal gäster</label>
+                    <input type="number" name="guests" placeholder="max 8" min="1" max="8">
+
+                    <input type="submit" name="submit" value="Send">
+            </fieldset>
+            </form>
+        </section>
+    </main>
+
+    
+    <footer class="footer">
+        <p>footer</p>
+    </footer>
+    </div>
+</body>
+</html>
