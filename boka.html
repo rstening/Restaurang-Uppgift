@@ -23,8 +23,28 @@
 
     <main class="content">
         <section>
-    
-            <form id="form" enctype="multipart/form-data" action="#" method="post">
+            
+            <ul class="bokabord">
+                <form id="form" enctype="multipart/form-data" action="#" method="post">
+                    <fieldset>
+                        <li><legend class="bokatitel">Bokningsuppgifter</legend></li>
+                            
+                            <label for="fullname">Namn</label>
+                            <li><input type="text" name="fullname" required placeholder="Skriv ditt namn"></li>
+                        
+                        
+                            <label for="date">Datum</label>
+                            <li><input type="date" name="date"></li>
+                            
+                            <label for="guests">Antal gäster</label>
+                            <li><input type="number" name="guests" placeholder="max 8" min="1" max="8"></li>
+        
+                            <li><input type="submit" name="submit" value="Boka" class="bokaknapp"></li>
+                    </fieldset>
+                    </form>
+            </ul>
+
+           <!-- <form id="form" enctype="multipart/form-data" action="#" method="post">
             <fieldset>
                 <legend>Bokningsuppgifter</legend><br>
                     
@@ -40,7 +60,7 @@
 
                     <input type="submit" name="submit" value="Boka">
             </fieldset>
-            </form>
+            </form>-->
         </section>
     </main>
 

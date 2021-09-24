@@ -157,4 +157,16 @@ main {
 
 }
 
+.bokabord{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
 
+.bokatitel{
+    padding: 20px;
+}
+
+fieldset{
+    border: none;
+}
