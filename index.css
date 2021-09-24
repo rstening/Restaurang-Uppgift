@@ -25,23 +25,26 @@ body {
 .footer {
     grid-area: footer
 }
+
 .container {
-    background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(#e6d8acb2, #c9ac98e0);
     margin:auto;
     width: 100vw;
     display: grid;
     column-gap: 0.5em;
+    row-gap: 0.5em;
     grid-template-areas:
 
     "header header header header header header"
     "content content content content content content"
     "footer footer footer footer footer footer"
 }
-header {
 
-    border-style: solid;
-    border-width: 0px;
+.header {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(41, 40, 40);
+    
 }
 footer {
     border-style: none;
@@ -63,7 +66,8 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgb(41, 40, 40);
-    max-width: 25vw;
+    max-width: 100%;
+    /*border-style: dotted;*/
     
     
 }
@@ -95,11 +99,7 @@ article{
     list-style: none;
     
 }
-form {
-    width: 300px;
-    margin:auto;
-    
-}
+
 
 .menu-price {
     display:inline;
@@ -108,11 +108,36 @@ form {
 
 
 .header-image {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    /*height: 50vh; */
     background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
+form {
+    margin: 0 10%;
+}
+
+h1{
+    padding-bottom: 1vw;
+    color: rgb(29, 28, 27);
+}
+p {
+    line-height: 1.75;
+}
+
+h3 {
+    padding: 1em;
+}
+
+.SVG-img {
+    max-width: 30%;
+    margin-top: 200px;
+}
+main {
+    overflow: hidden;
+}
 
 @media only screen and ( max-width: 800px ) {
 
@@ -120,6 +145,7 @@ form {
         margin: 5em auto;
         width: 80vw;
     }
+    /* ikoner istället för text på små skärmar kan vara bra */
 
 }
 @media only screen and ( max-width: 400px ) {
@@ -131,7 +157,4 @@ form {
 
 }
 
-h1{
-    padding-bottom: 1vw;
-}
-    
+
